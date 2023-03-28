@@ -17,6 +17,8 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+        <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
     <body class="antialiased">
         <div class="container container-form">
@@ -38,7 +40,9 @@
                     <label for="github" style="color: #fff;">GitHub</label>
                     <input type="text" class="form-control" id="github" name="github" placeholder="https://github.com/exemplo" pattern="https://github.com/.*" required>
                 </div>
-            
+                
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+
                 <div class="d-flex flex-row justify-content-center align-items-center mt-3 pb-4">
                     <button type="submit" class="btn btn-success mb-2">Gerar QRCode</button>
                 </div>
