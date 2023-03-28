@@ -6,6 +6,9 @@
 
         <title>{{ $nome }} - Perfil</title>
         
+        <!--Bootstrap-->
+        @include('comuns.bootstrap')
+
         <!--Favicon-->
         <link rel="icon" href="/images/favicons/qrcode_favicon.png"/>
 
@@ -15,8 +18,6 @@
         <!-- Styles -->
         <link rel="stylesheet" href="/css/app.css">
         <link rel="stylesheet" href="/css/blog.css">
-
-        <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
     <body class="antialiased">
         <div class="container container-blog">
