@@ -7,17 +7,14 @@
         <title>{{ $nome }} - Perfil</title>
         
         <!--Favicon-->
-        <link rel="icon" href="{{ URL::asset('/images/favicons/qrcode_favicon.png') }}"/>
-
-
-        
+        <link rel="icon" href="/images/favicons/qrcode_favicon.png"/>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="/css/blog.css">
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
