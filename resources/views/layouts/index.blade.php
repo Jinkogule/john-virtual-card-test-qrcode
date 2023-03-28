@@ -63,7 +63,7 @@
                     Olá {{ $nome_qr }}, aqui está seu QRCode!
                 </div>
                 <div class="d-flex flex-row justify-content-center align-items-center mt-3 pb-4">
-                    {!! QrCode::size(300)->generate('/' .$url_qrcode) !!}
+                    {!! QrCode::size(300)->generate('https://john-virtual-card-test.herokuapp.com/' .$url_qrcode) !!}
                 </div>
             @endif
         </div>
